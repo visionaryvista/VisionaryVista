@@ -50,9 +50,9 @@ body{
     content: '';
     position: absolute;
     left:0;
-    width:400px;
+    width:600px;
     height:90px;
-    /* background:red; */
+    background:black;
     border-left: 2px solid #0ef;
     animation: typing 1.5s steps(18) infinite alternate;
 }
