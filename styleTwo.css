@@ -1,5 +1,6 @@
 body{
-    background-color: aquamarine;
+    background-image: linear-gradient(90deg, red, blue);
+    background-size: cover;
 }
 .navbar{
    background-color: black;
@@ -16,8 +17,17 @@ body{
     font-size: 1.5em;
 }
 .pgtitle{
-    background-color: rgba(174, 250, 255, 0.452);
+    /* background-color: rgba(174, 250, 255, 0.452); */
+    background-image: linear-gradient(90deg,blue,purple);
     padding: 0.3rem 1rem 0.3rem 1rem;
     border-radius: 0.3rem;
     border: 0.2rem solid rgb(152, 212, 199);
+    box-shadow: 0 0 10px rgb(213, 255, 238);
+}
+.greetings-form{
+    background: rgb(255, 165, 165);
+    border: 2px solid rgb(146, 255, 204);
+    border-radius:0.2rem;
+    box-shadow: 10px 10px 10px rgb(85, 45, 45);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
