@@ -7,6 +7,12 @@ let welcomeButton = document.querySelector("#welcome-button")
 let username = document.querySelector("#username")
 let genderMale = document.querySelector("#male")
 let genderFemale = document.querySelector("#female")
+let greetingsForm = document.querySelector(".greetings-form")
+let fontCool = document.querySelector(".font-cool")
+let fontCute = document.querySelector(".font-cute")
+let fontNone = document.querySelector(".font-none")
+
+
 let greetingsSuffix = "Mr"
 let greetings = "Good morning"
 if(today.getHours()>=21 || today.getHours()<=4){
@@ -27,4 +33,14 @@ greetingsSuffix = "Mrs"
 welcomeButton.addEventListener("click",function(){
 welcomeMessage.textContent= greetings+" " +greetingsSuffix+" "+ username.value+". "+"The time is "+time
 })
+
+let fontCategories ={
+allFonts: ["Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif","Architects Daughter","Roboto, sans-serif"],
+allFontSelectors : [fontCool,fontCute,fontNone]
+}
+for(let i=0;i<3;i++){
+    fontCategories.allFontSelectors[i].addEventListener("click",function(){
+        greetingsForm.style.fontFamily = fontCategories.allFonts[i]
+})}
+
 
