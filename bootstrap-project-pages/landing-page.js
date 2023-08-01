@@ -7,7 +7,7 @@ let welcomeButton = document.querySelector("#welcome-button")
 let username = document.querySelector("#username")
 let genderMale = document.querySelector("#male")
 let genderFemale = document.querySelector("#female")
-let greetingsForm = document.querySelector(".greetings-form")
+let greetingsForm = document.querySelector("body")
 let fontCool = document.querySelector(".font-cool")
 let fontCute = document.querySelector(".font-cute")
 let fontNone = document.querySelector(".font-none")
@@ -35,12 +35,16 @@ welcomeMessage.textContent= greetings+" " +greetingsSuffix+" "+ username.value+"
 })
 
 let fontCategories ={
-allFonts: ["Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif","Architects Daughter","Roboto, sans-serif"],
-allFontSelectors : [fontCool,fontCute,fontNone]
+allFonts: ["'Share Tech Mono', monospace","Architects Daughter","Roboto, sans-serif"],
+allFontSelectors : [fontCool,fontCute,fontNone],
+pageBg:["blue","pink","black"],
+fontColor:["white","yellow","skyblue"]
 }
 for(let i=0;i<3;i++){
     fontCategories.allFontSelectors[i].addEventListener("click",function(){
         greetingsForm.style.fontFamily = fontCategories.allFonts[i]
+        greetingsForm.style.background= fontCategories.pageBg[i]
+        greetingsForm.style.color=fontCategories.fontColor[i]
 })}
 
 
