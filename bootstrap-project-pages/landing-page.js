@@ -12,6 +12,7 @@ let fontCool = document.querySelector(".font-cool")
 let fontCute = document.querySelector(".font-cute")
 let fontNone = document.querySelector(".font-none")
 
+greetingsForm.style.color="aqua"
 
 let greetingsSuffix = "Mr"
 let greetings = "Good morning"
@@ -37,14 +38,20 @@ welcomeMessage.textContent= greetings+" " +greetingsSuffix+" "+ username.value+"
 let fontCategories ={
 allFonts: ["'Share Tech Mono', monospace","Architects Daughter","Roboto, sans-serif"],
 allFontSelectors : [fontCool,fontCute,fontNone],
-pageBg:["blue","pink","black"],
-fontColor:["white","yellow","skyblue"]
+pageBg:["linear-gradient(90deg,blue,purple)","pink","black"],
+fontColor:["white","rgb(37, 0, 22)","skyblue"]
 }
 for(let i=0;i<3;i++){
     fontCategories.allFontSelectors[i].addEventListener("click",function(){
         greetingsForm.style.fontFamily = fontCategories.allFonts[i]
-        greetingsForm.style.background= fontCategories.pageBg[i]
         greetingsForm.style.color=fontCategories.fontColor[i]
+        if(i!=0){
+            greetingsForm.style.background= fontCategories.pageBg[i]
+        }
+        else{
+            greetingsForm.style.backgroundImage = fontCategories.pageBg[i]
+        }     
 })}
 
-
+let inputStyle = document.querySelectorAll("input")
+inputStyle[1].style.borderRadius = "0.3rem";
