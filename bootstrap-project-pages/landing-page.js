@@ -17,7 +17,7 @@ greetingsForm.style.color="aqua"
 let greetingsSuffix = "Mr"
 let greetings = "Good morning"
 if(today.getHours()>=21 || today.getHours()<=4){
-    greetings = "Good Night"
+    greetings = "Have a great Night"
 }
 else if(today.getHours()>=5 || today.getHours()<=11){
     greetings = "Good Morning"
@@ -32,8 +32,9 @@ genderFemale.addEventListener("click",function(){
 greetingsSuffix = "Mrs"
 })
 welcomeButton.addEventListener("click",function(){
-welcomeMessage.textContent= greetings+" " +greetingsSuffix+" "+ username.value+". "+"The time is "+time
+welcomeMessage.textContent= greetings+" " +greetingsSuffix+" "+ username.value+". "+"The time is "+time+". "+"Here are your today's Top 10 recommendations from The Multiverse Media Hub. Enjoy!"
 })
+
 
 let fontCategories ={
 allFonts: ["'Share Tech Mono', monospace","Architects Daughter","Roboto, sans-serif"],
