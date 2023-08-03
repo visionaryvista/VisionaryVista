@@ -12,6 +12,8 @@ let fontCool = document.querySelector(".font-cool")
 let fontCute = document.querySelector(".font-cute")
 let fontNone = document.querySelector(".font-none")
 
+
+
 greetingsForm.style.color="aqua"
 
 let greetingsSuffix = "Mr"
@@ -32,6 +34,7 @@ genderFemale.addEventListener("click",function(){
 greetingsSuffix = "Mrs"
 })
 welcomeButton.addEventListener("click",function(){
+    welcomeMessage.style.border = "0.2rem solid aqua"
 welcomeMessage.textContent= greetings+" " +greetingsSuffix+" "+ username.value+". "+"The time is "+time+". "+"Here are your today's Top 10 recommendations from The Multiverse Media Hub. Enjoy!"
 })
 
@@ -56,3 +59,15 @@ for(let i=0;i<3;i++){
 
 let inputStyle = document.querySelectorAll("input")
 inputStyle[1].style.borderRadius = "0.3rem";
+
+//  Custom linear gradient
+let firstColor = document.querySelector("#first-color")
+let secondColor = document.querySelector("#second-color")
+welcomeButton.addEventListener("click",function(){
+    // greetingsForm.style.background = "linear-gradient(90deg,blue,red)"
+    greetingsForm.style.background = "linear-gradient(90deg,"+firstColor.value+","+secondColor.value+")"
+})
+let introForm = document.querySelector(".intro-form")
+welcomeButton.addEventListener("click",function(){
+    introForm.remove()
+})
