@@ -40,8 +40,8 @@ body{
         font-size: 0.8rem;
     }
     .video-styling{
-        width: 300px;
-        height: 180px;
+        width: 350px;
+        height: 230px;
     }
 }
 @media(min-width:600px)and (max-width:1200px){
@@ -49,8 +49,8 @@ body{
         font-size: 1.2rem;
     }
     .video-styling{
-        width: 400px;
-        height: 280px;
+        width: 560px;
+        height: 315px;
     }
 }  
 #welcome-message{
@@ -69,8 +69,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .video-styling{
     border: 0.2rem solid aqua;
     box-shadow: 0 0 3rem white;
+    margin:2rem;
 }
