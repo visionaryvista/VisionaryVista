@@ -2,6 +2,14 @@ body{
     background-image: linear-gradient(90deg, red, blue);
     background-size: cover;
 }
+@keyframes video-background-shadow{
+    from{
+        box-shadow: 0 0 3rem rgb(76, 255, 195);
+    }
+    to{
+        box-shadow: 0 0 3rem rgb(255, 115, 115);
+    }
+}
 .navbar{
    background-color: black;
 }
@@ -23,6 +31,7 @@ body{
     border-radius: 0.3rem;
     border: 0.2rem solid rgb(152, 212, 199);
     box-shadow: 0 0 10px rgb(213, 255, 238);
+
 }
 .intro-form{
     /* background: rgb(255, 165, 165); */
@@ -53,9 +62,10 @@ body{
         height: 315px;
     }
 }  
+
+
 #welcome-message{
     border-radius: 0.3rem;
-    
     box-shadow: 0 0 3rem white;
     padding: 0.2rem;
     text-align: center;
@@ -75,4 +85,7 @@ body{
     border: 0.2rem solid aqua;
     box-shadow: 0 0 3rem white;
     margin:2rem;
+    animation-name: video-background-shadow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
