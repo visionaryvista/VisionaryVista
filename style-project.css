@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(90deg,red,blue);
+}
+.list-of-projects{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+.list-of-projects li a{
+    text-decoration: none;
+    color: aqua;
+}
+.list-of-projects li{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin: 3rem 3rem;
+    border: 0.5rem solid rgb(134, 241, 255);
+    border-radius: 0.3rem;
+    background: blueviolet;
+    
+
+}

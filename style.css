@@ -111,7 +111,6 @@ html{
    display:none;
 }
 #footer{
-    font-size:4rem;
     /* color:rgb(216, 252, 255); */
     background-color: rgb(122, 255, 255);
     border-radius: 3rem;
@@ -119,4 +118,16 @@ html{
     border-color: blue;
     border-style:double;
     font-size: 5rem;
+}
+@media (max-width:1000px){
+    .secText li{
+        font-size: 30px;
+    }
+    .wrapper .firstText{
+        font-size: 30px;
+        padding:2.65rem 0rem 0rem 0rem;
+    }
+    #footer{
+        font-size:2rem;
+    }
 }
