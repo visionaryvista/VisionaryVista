@@ -118,6 +118,10 @@ html{
     border-color: blue;
     border-style:double;
     font-size: 5rem;
+    animation-name: footer-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin:2rem;
 }
 @media (max-width:1000px){
     .secText li{
@@ -130,4 +134,25 @@ html{
     #footer{
         font-size:2rem;
     }
+}
+@media (max-width:600px){
+    .secText li{
+        font-size: 20px;
+    }
+    .wrapper .firstText{
+        font-size: 20px;
+        padding:3.3rem 0rem 0rem 0rem;
+    }
+    #footer{
+        font-size:2rem;
+    }
+}
+@keyframes footer-animation{
+    from{
+        box-shadow: 0 0 3rem blue;
+    }
+    to{
+        box-shadow:0 0 3rem rgb(98, 237, 255);
+    }
+
 }
