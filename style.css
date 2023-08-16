@@ -14,11 +14,11 @@
     --text-color:white;
     --main-color:rgb(91, 195, 255);
 }
-body{
+.nav-and-animation{
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vh;
     background: black;
     color:var(--text-color);
 }
@@ -45,10 +45,10 @@ body{
     animation:slide 12s steps(4) infinite, colorful, 6s infinite ;
 }
 .main-pg-img{
-    width:20rem;
-    height:30rem;
+    width:30vw;
+    height:100vh;
     border: 0.5rem solid rgb(68, 255, 246);
-    border-radius: 333rem;
+    border-radius: 0.3rem;
     box-shadow: 1rem 1rem 3rem rgb(67, 180, 255);
     animation-name: main-img-animation;
     animation-duration: 4s;
@@ -133,6 +133,88 @@ html{
     animation-iteration-count: infinite;
     margin:2rem;
 }
+@keyframes footer-animation{
+    from{
+        box-shadow: 0 0 3rem blue;
+    }
+    to{
+        box-shadow:0 0 3rem rgb(98, 237, 255);
+    }
+
+}
+@keyframes main-img-animation{
+    from{
+        box-shadow: 1rem 1rem 3rem rgb(67, 180, 255);
+        opacity: 100%;
+    }
+    to{
+        box-shadow: -1rem -1rem 3rem rgb(0, 187, 156);
+        opacity: 30%;
+    }
+
+}
+.intro{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    color: #0ef;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+@keyframes intro-animation{
+    from{
+        background: linear-gradient(90deg,rgb(0, 57, 71),rgba(255, 255, 255, 0)) ;
+        border:0.3rem solid rgb(158, 224, 255);
+        box-shadow: 0.5rem 0.5rem 1rem aqua;
+    }
+    to{
+        background: linear-gradient(90deg,rgba(0, 54, 63, 0),rgb(0, 43, 71));
+        border:0.3rem solid rgba(0, 255, 234, 0.493);
+        box-shadow: -0.5rem -0.5rem 1rem rgba(0, 255, 255, 0.377);
+    }
+}
+.intro h2{
+    background: linear-gradient(90deg,rgb(0, 57, 71),rgba(0, 102, 85, 0));
+    height: 100vh;
+    width:100vw;
+    padding: 4rem;
+    font-size: 4rem;
+    text-align: center;
+    justify-content: center;
+    animation-name: intro-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes intro-content{
+    from{
+        width:0;
+        height: 0;
+        box-shadow: 0.5rem 0.5rem 1rem aqua;
+        font-size: 0;
+        color: red;
+    }
+    to{
+        width: 83rem;
+        height: 37rem;
+        box-shadow: -0.5rem -0.5rem 1rem rgba(0, 255, 255, 0.377);
+        font-size: 4rem;
+        color: rgb(44, 255, 174);
+    }
+}
+.intro h2 p{
+    background: rgba(0, 255, 200, 0.219);
+    animation-name: intro-content;
+    animation-duration: 2s;
+    padding:4rem;
+    border-radius: 0.5rem;
+    box-shadow: -0.5rem -0.5rem 1rem rgba(0, 255, 255, 0.377);
+    overflow: hidden;
+    margin-top: 4rem;
+    color: rgb(44, 255, 174);
+    /* animation-iteration-count: infinite; */
+}
 @media (max-width:1000px){
     .secText li{
         font-size: 30px;
@@ -145,9 +227,12 @@ html{
         font-size:2rem;
     }
     .main-pg-img{
-        width:10rem;
-        height: 15rem;
+        width:30vw;
+        height: 100vh;
         border: 0.35rem solid rgb(68, 255, 246);
+    }
+    .intro h2{
+        font-size: 3rem;
     }
 }
 @media (max-width:600px){
@@ -162,27 +247,11 @@ html{
         font-size:2rem;
     }
     .main-pg-img{
-        width:6rem;
-        height: 9rem;
+        width:30vw;
+        height: 100vh;
         border: 0.2rem solid rgb(68, 255, 246);
     }
+    .intro{
+        flex-direction: column;
+    }
 }
-@keyframes footer-animation{
-    from{
-        box-shadow: 0 0 3rem blue;
-    }
-    to{
-        box-shadow:0 0 3rem rgb(98, 237, 255);
-    }
-
-}
-@keyframes main-img-animation{
-    from{
-        box-shadow: 1rem 1rem 3rem rgb(67, 180, 255);
-    }
-    to{
-        box-shadow: -1rem -1rem 3rem rgb(248, 2, 105);
-    }
-
-}
-
