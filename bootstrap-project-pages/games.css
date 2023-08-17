@@ -4,3 +4,11 @@ body{
     font-family: 'Share Tech Mono', monospace;
     font-size: 3rem;
 }
+.dots{
+    height: 70vh;
+    width:70wv;
+    background-color: aqua;
+    color: red;
+    border: 0.5rem solid rgb(31, 0, 0);
+    font-size: 3rem;
+}
