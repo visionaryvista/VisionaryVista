@@ -4,11 +4,59 @@ body{
     font-family: 'Share Tech Mono', monospace;
     font-size: 3rem;
 }
-.dots{
+.game-bg{
     height: 70vh;
     width:70wv;
     background-color: aqua;
-    color: red;
-    border: 0.5rem solid rgb(31, 0, 0);
-    font-size: 3rem;
+    border: 0.5rem solid rgb(31, 0, 0); 
+}
+.user-car{
+width:10rem;
+height:5rem;
+}
+.enemy-car-one{
+    width:10rem;
+    height:5rem;
+    animation-name:arrow-animation;
+    animation-duration: 25s;
+    animation-iteration-count: 1;
+    margin: 1rem;
+    margin-left: 70rem;
+    }
+.enemy-car-two{
+    width:10rem;
+    height:5rem;
+    animation-name:arrow-animation;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    margin: 1rem;
+    margin-left: 70rem;
+}
+
+@keyframes arrow-animation{
+from{
+    margin-left: 0rem;
+}
+to{
+margin-left: 70rem;
+}
+}
+.results{
+    color:blue;
+    font-size: 4rem;
+}
+@media(max-width:600px){
+    .results{
+        font-size: 1rem;
+    }
+    .enemy-car-one,.enemy-car-two,.user-car{
+        width: 3rem;
+        height:2rem;
+    }
+    .enemy-car-one{
+        animation-duration: 50s;
+    }
+    .enemy-car-two{
+        animation-duration: 40s;
+    }
 }
