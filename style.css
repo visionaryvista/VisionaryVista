@@ -261,3 +261,82 @@ html{
         font-size: 2rem;
     }
 }
+.aboutme-img{
+    border: 1rem solid rgba(25, 255, 255, 0.568);
+    border-radius: 50%;
+    box-shadow: 0 0 3rem aqua;
+    animation: 3s infinite border-aboutimg;
+    margin-top: 10rem;
+    width:30vw;
+}
+@keyframes border-aboutimg{
+    from{
+        box-shadow: 0 0 3rem aqua;
+    }
+    to
+    {
+        box-shadow: 0 0 7rem rgb(0, 204, 160);  
+    }
+}
+.aboutme-alignment{
+    display: flex;
+    flex-direction: row;
+}
+.aboutme-alignment h2{
+    margin-top: 10rem;
+    font-size: 3rem;
+    padding: 5rem;
+    border: 0.5rem solid#0ef;
+    border-radius: 3rem 0 3rem 0;
+    color:aquamarine;
+    background-image: linear-gradient(90deg,rgba(0, 255, 255, 0.356),rgba(0, 218, 127, 0.692));
+    cursor:default;
+}
+.aboutme-list{
+    font-size: 3rem;
+    color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.432);
+    text-align: center;
+    text-shadow: 0.3rem 0.3rem 0.5rem rgb(0, 0, 0);
+    border-radius: 3rem 0 3rem 0;
+    margin:3rem;
+    list-style-type: none;
+    padding: 3rem;
+    cursor:default;
+    width: 70vw;
+    
+}
+.aboutme-list li{
+    background: rgba(144, 255, 231, 0.356);
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.aboutme-list li:hover{
+    background: rgba(2, 116, 116, 0.356);
+    margin: 1rem;
+    border-radius: 1rem;
+    cursor:default;
+    color: aqua;
+}
+.aboutme-flex{
+    display: flex;
+}
+.aboutme-flex img{
+    width: 30vw;
+    margin:4.2rem;
+    border:0.3rem solid aqua;
+    border-radius: 3rem;
+    box-shadow: -1rem -1rem 2rem aqua;
+}
+@media(max-width:600px){
+.aboutme-list,.aboutme-alignment h2{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-width: 0.1rem;
+
+}
+.aboutme-flex img{
+    width: 0vw;
+    border: 0rem;
+}
+}
