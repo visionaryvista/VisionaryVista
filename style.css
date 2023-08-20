@@ -360,7 +360,7 @@ html{
     margin-right: auto;
     list-style-type:none;
 }
-.skill-meter li span{
+.skill-meter span{
     background-color: rgba(0, 238, 255, 0.295);
     color: rgb(0, 255, 149);
     border-radius: 3rem;
@@ -371,6 +371,7 @@ html{
 .skill-meter-margin-others{
     margin-top: 2rem;
 }
+
 }
 
 /* education */
