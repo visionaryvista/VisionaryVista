@@ -333,10 +333,54 @@ html{
     font-size: 1.5rem;
     padding: 1rem;
     border-width: 0.1rem;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 .aboutme-flex img{
     width: 0vw;
     border: 0rem;
+    margin: 0;
 }
+}
+/* skills */
+.skill-meter-margin-first{
+    margin-top: 15rem;
+}
+.skill-meter-margin-others{
+    margin-top:5rem;
+}
+.skill-meter{
+    border:0.1rem solid aqua;
+    border-radius: 3rem;
+    color: aquamarine;
+    font-size: 1.5vw;
+    padding: 0 0 0rem 0.5rem;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type:none;
+}
+.skill-meter li span{
+    background-color: rgba(0, 238, 255, 0.295);
+    color: rgb(0, 255, 149);
+    border-radius: 3rem;
+    padding: 1rem;
+    border:0.3rem solid aqua;
+}
+@media (max-width:600px) {
+.skill-meter-margin-others{
+    margin-top: 2rem;
+}
+}
+
+/* education */
+.education-list{
+    margin-top: 15rem;
+    color: #0ef;
+    background-color: rgba(72, 255, 194, 0.205);
+    font-size: 3rem;
+    border: 0.2rem solid aqua;
+    border-radius: 1.5rem 0 1.5rem 0;
+    padding: 2rem;
+    list-style-type: none;
 }
