@@ -376,7 +376,6 @@ html{
 
 /* education */
 .education-list{
-    margin-top: 15rem;
     color: #0ef;
     background-color: rgba(72, 255, 194, 0.205);
     font-size: 3rem;
@@ -384,4 +383,27 @@ html{
     border-radius: 1.5rem 0 1.5rem 0;
     padding: 2rem;
     list-style-type: none;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12rem;
+    align-items: center;
+}
+.education-list li img{
+    margin-top: 1rem;
+    width: 50vw;
+    height: 50vh;
+    border: 0.5rem solid aqua;
+    border-radius: 5rem;
+}
+.education-list li:first-child{
+    margin-top: 1rem;
+}
+@media(max-width:600px){
+    .education-list{
+        font-size: 1rem;
+    }
+    .education-list li img{
+        border-width: 0.2rem;
+    }
 }
