@@ -353,7 +353,7 @@ html{
     border:0.1rem solid aqua;
     border-radius: 3rem;
     color: aquamarine;
-    font-size: 1.5vw;
+    font-size: 1vw;
     padding: 0 0 0rem 0.5rem;
     width: 70vw;
     margin-left: auto;
@@ -371,7 +371,9 @@ html{
 .skill-meter-margin-others{
     margin-top: 2rem;
 }
-
+.skill-meter{
+    font-size: 1.5vw;
+}
 }
 
 /* education */
@@ -395,15 +397,18 @@ html{
     height: 50vh;
     border: 0.5rem solid aqua;
     border-radius: 5rem;
+    animation: 3s infinite border-aboutimg;
 }
 .education-list li:first-child{
     margin-top: 1rem;
 }
 @media(max-width:600px){
     .education-list{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .education-list li img{
         border-width: 0.2rem;
+        width: 70vw;
+        height: 50vh;
     }
 }
