@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+div{
+width:40vw;
+margin: auto;
+display: flex;
+}
+button{
+    font-size: 3rem;
+    color: white;
+}
+.color-one{
+    background-color: red;
+    border:0.1rem solid rgb(255, 255, 255);
+}
+.color-two{
+    background-color: grey;
+    border:0.1rem solid rgb(255, 255, 255);
+}
+.color-three{
+    background-color: yellow;
+    border:0.1rem solid rgb(255, 255, 255);
+}
+.color-four{
+    background-color: violet;
+    border:0.1rem solid rgb(255, 255, 255);
+}
+div{
+margin: auto;
+}
+div button{
+width:20vw;
+height: 20vh;
+font-size: 1rem;
+
+}
+div .start{
+margin-left: auto;
+margin-right: auto;
+height: 2rem;
+width: 40vw;
+background-color: brown;
+
+}
+div{
+    border:0.3rem solid rgb(255, 255, 255);
+    box-shadow: 1rem 1rem 3rem red;
+    border-radius: 1rem;
+}
