@@ -3,16 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Game</title>
-    <link href="gameTwo.css" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+    <link href="tictactoe.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -34,31 +26,33 @@
                 <a class="nav-link" href="gameTwoFiles/Simon.html">SIMON</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="gameThreeFiles/tictactoe.html">TIC TAC TOE(PvP)</a>
+                <a class="nav-link" href="tictactoe.html">TIC TAC TOE(PvP)</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="gameThreeFiles/tictactoe-comp.html">TIC TAC TOE(PvC)</a>
+                <a class="nav-link" href="tictactoe-comp.html">TIC TAC TOE(PvC)</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    <h1>Welcome to Simon</h1></p>
-    <h2>Rules: Remember the previous clicked color and keep stacking it with colours clicked in future</h2></p>
-   <div> <button class="start">START GAME</button></div>
-    <div>
-        
-            <button class="color-one">Color 1</button>
-            <button class="color-two">Color 2</button>
-    </div>
-    <div>    
-        
-            <button class="color-three">Color 3</button>
-            <button class="color-four">Color 4</button>
-        
-    </div>
+    <p class="results">Hello</p>
+  <div class="center">  <button id="mode">Retry</button></div>
+    <table>
+        <tr><td><button class="box"></button></td>
+        <td><button class="box"></button></td>
+        <td><button class="box"></button></td>
+    </tr>
+        <tr>
+            <td><button class="box"></button></td>
+            <td><button class="box"></button></td>
+            <td><button class="box"></button></td>
+        </tr>
+        <tr>
+            <td><button class="box"></button></td>
+            <td><button class="box"></button></td>
+            <td><button class="box"></button></td>
+        </tr>
+    </table>
 </body>
-<script src="gameTwo.js"></script>
-</html>
-</body>
+<script src="tictactoe.js"></script>
 </html>

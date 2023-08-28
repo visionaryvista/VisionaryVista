@@ -1,0 +1,56 @@
+table tr td button{
+    background-color: aqua;
+    width: 10rem;
+    height: 10rem;
+    font-size: 5rem;
+}
+
+p{
+    background: aqua;
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+}
+#mode{
+    width:15rem;
+    height:4rem;
+    
+
+}
+table{
+margin: auto;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.center button{
+    border: 0.3rem solid rgb(255, 112, 112);
+    border-radius: 3rem;
+    background-color: rgb(8, 65, 65);
+    color: aliceblue;
+    font-size: 2rem;
+}
+@media(max-width:600px){
+    table tr td button{
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+p{
+    font-size: 1.2rem;
+}
+.center button{
+    border: 0.1rem solid rgb(255, 112, 112);
+    border-radius: 1rem;
+    background-color: rgb(8, 65, 65);
+    color: aliceblue;
+    font-size: 1rem;
+}
+#mode{
+    width:7rem;
+    height:3rem;
+    
+
+}
+}
